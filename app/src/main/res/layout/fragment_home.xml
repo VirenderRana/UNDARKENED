@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#4A148C"
+        android:backgroundTint="#61C96C9D">
+
+        <Button
+            android:id="@+id/button_plan"
+            style="@android:style/Widget.DeviceDefault.Button.Inset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="81dp"
+            android:gravity="center_horizontal"
+            android:text="MAKE A PLAN!"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/textView3"
+            style="@style/Widget.AppCompat.TextView.SpinnerItem"
+            android:layout_width="1080px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:background="#8A00FFD9"
+            android:gravity="center_horizontal"
+            android:text="HOME"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="#050505"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            android:visibility="visible"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="150dp"
+            android:gravity="center_horizontal"
+            android:text="UPCOMING PLANS:"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#673AB7"
+            android:textSize="36sp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/db_list"
+            android:layout_width="wrap_content"
+            android:layout_height="448dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="210dp" />
+
+        <Button
+            android:id="@+id/searchbtn"
+            style="@android:style/Widget.Button.Inset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="39dp"
+            android:text="SEARCH" />
+
+    </RelativeLayout>
+</FrameLayout>
